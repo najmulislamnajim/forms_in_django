@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+    </style>
+
+    <title>Successfully send message!</title>
+  </head>
+  <body style="background-color: coral;">
+    <h5>Hello, {{firstname}}</h5>
+    <p> Thanks for contacting me.</p>
+
+    <section id="contact" class="py-5">
+        <div class="container d-grid">
+            <a href="{%url 'home'%}" class="btn btn-info mx-auto" role="button" style="background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;">&#9666;Home</a>
+        </div>
+    </section>
+    
+  </body>
+</html>

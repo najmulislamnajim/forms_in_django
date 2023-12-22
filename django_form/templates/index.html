@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+{%block title%} Najmul Islam Najim {%endblock%}
+
+{%block style%}
+        
+
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 30px;
+            text-align: center;
+          }
+          
+          .skill-title {
+            padding: 10px;
+            flex: 10%;
+          }
+          
+          .progress-bar-container {
+            padding: 10px;
+            flex: 90%;
+          }
+{%endblock%}
+
+{%block content%}
+<!-- Header -->
+<header class="bg-secondary text-white text-center py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left side with photo -->
+            <div class="col-lg-6">
+                <img src="{% static 'images/najim.png' %}" alt="Profile Photo" class="profile-photo" style="width:300px;">
+            </div>
+            <!-- Right side with intro -->
+            <div class="col-lg-6">
+                <h1 class="display-4">Najmul Islam Najim</h1>
+                <p class="lead">Web Developer | Designer | compatitive programmer</p>
+                <p style='text-align: left'>Hi... My name is Najmul Islam Najim. I am studying mathematics in University of Rajshahi. I love coding, solving problems, reading books.</br> I'm very passionate and dedicated to my work and love to learn new things every day. I'm working hard to fulfill my dream. I believe, there's no limit of learning!</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-light py-5">
+    <div class="container">
+        <h2 class="display-4 text-center">Portfolio</h2>
+
+        <!-- Skill 1 -->
+        <div class="skill-container mt-2">
+            <div class="skill-title" style="padding: 0px">
+                <h5>C</h5>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress">
+                    <!-- Add the 'animate__animated' class for animation -->
+                    <div class="progress-bar bg-success animate__animated animate__fadeInLeft" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 60%">60%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Skill 2 -->
+        <div class="skill-container mt-2">
+            <div class="skill-title" style="padding: 0px">
+                <h5>C++</h5>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress">
+                    <!-- Add the 'animate__animated' class for animation -->
+                    <div class="progress-bar bg-danger animate__animated animate__fadeInLeft" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 70%">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Skill 3 -->
+        <div class="skill-container mt-2">
+            <div class="skill-title" style="padding: 0px">
+                <h5>JavaScript</h5>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress">
+                    <!-- Add the 'animate__animated' class for animation -->
+                    <div class="progress-bar bg-info animate__animated animate__fadeInLeft" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Skill 4 -->
+        <div class="skill-container mt-2">
+            <div class="skill-title" style="padding: 0px">
+                <h5>Python</h5>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress">
+                    <!-- Add the 'animate__animated' class for animation -->
+                    <div class="progress-bar bg-warning animate__animated animate__fadeInLeft" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container d-grid">
+        <h2 class="display-4 mb-4 text-center">Contact Me</h2>
+        <a href="{%url 'form'%}" class="btn btn-info mx-auto" role="button" style="width: 150px;">Contact Me</a>
+    </div>
+</section>
+
+{%endblock%}
